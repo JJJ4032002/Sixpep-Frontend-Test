@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(56, 168, 105);
+  font-family: "Montserrat", monospace;
+}
+
+.head {
+  padding: 0.5em;
+  font-size: 2.2rem;
+  color: wheat;
+  cursor: pointer;
+}
+
+.notice {
+  margin-top: 1em;
+  text-align: center;
+  color: wheat;
+}
+
+nav {
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 60% 60%;
+  border-bottom: 0.8em solid wheat;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buttonsCont {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 0 0.9em;
+  padding: 0.4em 0.8em;
+  background: transparent;
+  border: 0.3em solid rgba(0, 0, 0, 0.4);
+  border-radius: 0.5em;
+  color: wheat;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.buttons:hover {
+  border: 0.3em solid wheat;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+
+  margin: 3em auto 3em auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid wheat;
+  color: wheat;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 0.5em 3em;
+}
+
+@media (max-width: 450px) {
+  th,
+  td {
+    padding: 5% 12% 5% 2%;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid wheat;
+    color: wheat;
+    text-align: left;
+  }
+}
+
+@media (max-width: 350px) {
+  th,
+  td {
+    padding: 0.4em 0;
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+  .head {
+    font-size: 1.5rem;
+  }
+}
